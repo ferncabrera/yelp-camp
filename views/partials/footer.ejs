@@ -1,0 +1,10 @@
+<footer class="footer bg-dark py-3 mt-auto">
+    <div class="container">
+        <span class="text-muted">&copy; YelpCamp 2020</span>
+        <% if (currentUser) { %>
+            <span class="text-muted"> - Signed in as <%=currentUser.username%></span>
+            <% } else {%>
+                <span class="text-muted"> - Visiting as a Guest</span>
+                <% } %>
+    </div>
+</footer>
